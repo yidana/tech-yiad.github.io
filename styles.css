@@ -1,0 +1,931 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+html{
+  color: #545454;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+::-moz-selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+::selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+.android-search-box .mdl-textfield__input {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.android-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.android-fab {
+  position: absolute;
+  right: 20%;
+  bottom: -26px;
+  z-index: 3;
+  background: #64ffda !important;
+  color: black !important;
+}
+
+.android-mobile-title {
+  display: none !important;
+}
+
+
+.android-logo-image {
+  height: 28px;
+  width: 140px;
+}
+.android-header{
+  height: 100px;
+  width: 100%;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+}
+
+.android-header {
+  overflow: visible;
+  background-color: #CC0066;
+
+}
+
+  .android-header .material-icons {
+    color: white !important;
+  }
+
+  .android-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+  }
+
+  .android-header .mdl-navigation__link {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .android-navigation-container {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 500px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .android-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 800px;
+  }
+
+  .android-search-box.is-focused + .android-navigation-container {
+    opacity: 0;
+    width: 100px;
+  }
+
+
+  .android-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+  }
+
+    .android-navigation .mdl-navigation__link:hover {
+      border-bottom: 4px solid blue;
+    }
+
+  .android-search-box {
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .android-more-button {
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+
+.android-drawer {
+  border-right: none;
+}
+
+  .android-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+  }
+
+  .android-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: black;
+  }
+@media screen and (min-width: 901px){
+  #refresh-button{
+    visibility: hidden;
+  }
+}
+
+
+.android-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #8bc34a;
+  }
+
+  .android-drawer .mdl-layout-title {
+    position: relative;
+    background: #6ab344;
+    height: 160px;
+  }
+
+    .android-drawer .android-logo-image {
+      position: absolute;
+      bottom: 16px;
+    }
+
+.android-be-together-section {
+  position: relative;
+  height: 650px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('images/New_BannerFinal.png') center 30% no-repeat;
+  background-size: cover;
+  padding-bottom: 0px;
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #767777;
+  font-weight: 500;
+}
+
+.projects-title{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.someText{
+  float: left;
+  padding-left: 60px;
+}
+
+.android-slogan {
+  font-size: 60px;
+  padding-top: 30px;
+  color: #555252;
+}
+
+.android-sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+  color: #555252;
+}
+
+
+/*.about-techYiad{*/
+  /*background-color: white;*/
+ /**/
+/*}*/
+.android-create-character {
+  font-size: 21px;
+  padding-top: 400px;
+}
+
+  .android-create-character a {
+    text-decoration: none;
+    color: #767777;
+    font-weight: 300;
+  }
+
+.android-screen-section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background: rgba(237,237,237,1);
+  background: -moz-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(240,240,240,1) 11%, rgba(250,250,250,1) 95%, rgba(250,250,250,1) 100%);
+  /*background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,237,237,1)), color-stop(11%, rgba(240,240,240,1)), color-stop(95%, rgba(250,250,250,1)), color-stop(100%, rgba(250,250,250,1)));*/
+  background: -webkit-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(240,240,240,1) 11%, rgba(250,250,250,1) 95%, rgba(250,250,250,1) 100%);
+  background: -o-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(240,240,240,1) 11%, rgba(250,250,250,1) 95%, rgba(250,250,250,1) 100%);
+  background: -ms-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(240,240,240,1) 11%, rgba(250,250,250,1) 95%, rgba(250,250,250,1) 100%);
+  background: linear-gradient(to right, rgba(237,237,237,1) 0%, rgba(240,240,240,1) 11%, rgba(250,250,250,1) 95%, rgba(250,250,250,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#fafafa', GradientType=1 );
+}
+
+.engage-us{
+  border-radius: 71px 71px 71px 71px;
+  -moz-border-radius: 71px 71px 71px 71px;
+  -webkit-border-radius: 71px 71px 71px 71px;
+  border: 0px groove #000000;
+}
+
+.contacts-col{
+  border: 1px solid black;
+  margin-top: 4px;
+}
+
+.android-screens {
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.android-screen {
+  text-align: center;
+}
+
+.android-screen .android-link {
+  margin-top: 16px;
+  display: block;
+  z-index: 2;
+}
+
+.android-image-link {
+  text-decoration: none;
+}
+
+.android-wear {
+  display: inline-block;
+  width: 160px;
+  margin-right: 32px;
+}
+
+  .android-wear .android-screen-image {
+    width: 40%;
+    z-index: 1;
+  }
+
+
+.android-phone {
+  display: inline-block;
+  width: 64px;
+  margin-right: 48px;
+}
+
+  .android-phone .android-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.android-tablet {
+  display: inline-block;
+  width: 110px;
+  margin-right: 64px;
+}
+
+  .android-tablet .android-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .android-tablet .android-link {
+    display: block;
+    z-index: 2;
+  }
+
+
+.android-tv {
+  display: inline-block;
+  width: 300px;
+  margin-right: 80px;
+}
+
+  .android-tv .android-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.android-auto {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+}
+
+  .android-auto .android-screen-image {
+    display: block;
+    height: 300px;
+    z-index: 1;
+  }
+.our-projects .mdl-card__title-text .mdl-card__supporting-text{
+  text-decoration: none;
+
+}
+a{
+  text-decoration: none;
+}
+
+.android-wear-section {
+  position: relative;
+  /*background: url('images/About_5.png') center top no-repeat;*/
+  background-position: center;
+  /*background-size: cover;*/
+  height: 500px;
+  background-color: whitesmoke;
+  padding-top: 50px;
+  /*padding-left: 500px;*/
+  /*padding-bottom: 35px;*/
+  max-width: 100%;
+
+
+}
+
+.about-techYiad{
+  position: relative;
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(163, 177, 191, 0.3) 0px 17px 24px;
+  z-index: 5;
+  padding: 50px;
+}
+
+.contacts span{
+  --x-height-multiplier: 0.375;
+  --baseline-multiplier: 0.17;
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  text-align: left;
+}
+
+.about-techYiad-text{
+  --x-height-multiplier: 0.375;
+  --baseline-multiplier: 0.17;
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  text-align: center;
+
+}
+.contacts-div p span{
+  text-align: left;
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .about-techYiad{
+    position: center;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(163, 177, 191, 0.3) 0px 17px 24px;
+    z-index: 5;
+  }
+
+  .about-techYiad-text{
+    --x-height-multiplier: 0.375;
+    --baseline-multiplier: 0.17;
+    font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: .01rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    text-align: center;
+
+  }
+  .android-wear-section{
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 401px){
+  .about-techYiad{
+    position: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(163, 177, 191, 0.3) 0px 17px 24px;
+    z-index: 5;
+  }
+  .android-wear-section{
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .about-techYiad{
+    position: center;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(163, 177, 191, 0.3) 0px 17px 24px;
+    z-index: 5;
+  }
+  .android-wear-section{
+    height: 400px;
+  }
+}
+
+.about-techYiad-heading{
+
+}
+.read-more{
+ margin-top: 13px;
+}
+
+.android-wear-band {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #37474f;
+}
+
+.android-wear-band-text {
+  max-width: 800px;
+  margin-left: 25%;
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
+  .android-wear-band-text p {
+    padding-top: 8px;
+  }
+
+.android-link {
+  text-decoration: none;
+  color: #8bc34a !important;
+}
+
+  .android-link:hover {
+    color: #7cb342 !important;
+  }
+
+  .android-link .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+  }
+
+.android-alt-link {
+  text-decoration: none;
+  color: #64ffda !important;
+  font-size: 16px;
+}
+
+  .android-alt-link:hover {
+    color: #00bfa5 !important;
+  }
+
+  .android-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.android-customized-section {
+  text-align: center;
+}
+
+.android-customized-section-text {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 16px 0 16px;
+}
+
+  .android-customized-section-text p {
+    padding-top: 16px;
+  }
+
+.android-customized-section-image {
+  /*background: url('images/devices.jpg') center top no-repeat;*/
+  ackground-size: cover;
+  height: 400px;
+}
+
+.android-more-section {
+  padding: 80px 0;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+  .android-more-section .android-section-title {
+    margin-left: 12px;
+    padding-bottom: 24px;
+  }
+
+.android-card-container {
+}
+
+  .android-card-container .mdl-card__media {
+    overflow: hidden;
+    background: white;
+  }
+  .mdl-card__media{
+    background-color: white;
+  }
+  .card-image{
+    width: auto;
+  }
+
+    .android-card-container .mdl-card__media img {
+      width: 100%;
+    }
+
+  .android-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+
+  }
+
+  .android-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .android-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+
+  }
+.mdl-card__supporting-text{
+  padding-top: 0px;
+  text-align: left;
+}
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h2 {
+  width: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 30px;
+  border-bottom: 2px solid #ccc;
+  margin: auto;
+  padding-bottom: 17px;
+}
+
+.projects-text{
+  padding-top: 10px;
+}
+
+
+.about-SF{
+  padding-left: 180px;
+  padding-right: 180px;
+  max-width: 100%;
+  padding-top: 25px;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.about-SF-text{
+  padding-bottom: 30px;
+}
+
+.about-SF-images{
+  -webkit-box-shadow: -1px 2px 4px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 2px 4px 1px rgba(0,0,0,0.75);
+  box-shadow: -1px 2px 4px 1px rgba(0,0,0,0.75);
+}
+
+.about-SF-text p{
+  --x-height-multiplier: 0.375;
+  --baseline-multiplier: 0.17;
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -.003em
+}
+.about-SF-text li{
+  --x-height-multiplier: 0.375;
+  --baseline-multiplier: 0.17;
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  padding: 5px;
+}
+
+@media screen and (max-width: 901px) {
+  .about-SF{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.all-projects{
+  padding: 80px 0;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.about-SF-images{
+  padding-top: 20px;
+  border: 4px solid #CC0066;
+}
+
+/*hr {*/
+  /*border-top: 0px solid blue !important;*/
+  /*padding: 0;*/
+  /*margin-top: 0.5em !important;*/
+  /*border-width: 6px !important;*/
+  /*width: 245px;*/
+/*}*/
+
+.projects-introductory-text{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+  .android-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .android-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+  }
+
+.android-footer {
+  background-color: #212121;
+  position: relative;
+}
+
+  .android-footer a:hover {
+    color: #8bc34a;
+  }
+
+  .android-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+  }
+
+  .android-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+  }
+
+  .android-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+  }
+
+  .android-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+  }
+
+  .android-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+
+.android-link-menu:hover {
+  cursor: pointer;
+}
+
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .android-navigation-container {
+    display: none;
+  }
+
+  .android-title {
+    display: none !important;
+  }
+
+  .android-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+     consecutive "+" operators in some cases. Therefore, we need to use both
+     here to cover all the bases. */
+  .android.android-search-box.is-focused ~ .android-mobile-title,
+  .android-search-box.is-focused + .android-navigation-container + .android-mobile-title {
+    opacity: 0;
+  }
+
+  .android-more-button {
+    display: none;
+  }
+
+  .android-search-box.is-focused {
+    width: calc(100% - 48px);
+  }
+
+  .android-search-box .mdl-textfield__expandable-holder {
+    width: 100%;
+  }
+
+  .android-be-together-section {
+    height: 350px;
+  }
+
+  .android-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .android-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .android-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .android-create-character img {
+    height: 12px;
+  }
+
+  .android-fab {
+    display: none;
+  }
+
+  .android-wear-band-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .android-footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+.demo-card-wide.mdl-card {
+  width: 640px;
+  height: 380px;
+
+}
+.company-contact li{
+  list-style-type: none;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.company-contact p{
+  margin-top: 10px;
+  font-size: 20px;
+}
+@media screen and (max-width: 500px){
+  .company-contact li{
+    list-style-type: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  .social-but{
+    display: inline;
+    padding: 10px;
+
+  }
+}
+
+.mdl-card__actions {
+  outline: #CC0066 solid 5px;
+  z-index: 4;
+}
+
+#name {
+  display:flex;
+  margin-top: 10px;
+  justify-content: left;
+}
+
+#contact{
+  diplay: flex;
+
+}
+
+
+.mdl-button {
+// outline: red solid 5px;
+  margin-left: 10px ;
+
+}
+.demo-card-wide {
+  height: 200px;
+// outline: limegreen 10px solid;
+}
+
+
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 64px;
+  background-color:#CC0066;
+}
+
+.mdl-card__title-text {
+  position: relative;
+  top: 6px;
+
+}
+
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+
+#mycard {
+  height: 400px;
+  width:100%;
+  display:flex;
+  flex-direction: row;
+// outline: red solid 10px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+}
+
+#mycard1{
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  flex-direction: row;
+}
+
+.mdl-textfield {
+  width: 250px;
+  margin-right: 10px;
+}
